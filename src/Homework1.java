@@ -31,8 +31,8 @@ public class Homework1 {
 												// End of arguments input sample
 		
 		// TODO: Implement your project here
-		//String data = args[0];  //รับค่าใน cmd
-		String data = "251-*32*+";
+		String data = args[0];  //รับค่าใน cmd
+		//String data = "251-*32*+";
 		//System.out.print("Input:");
 		//Scanner input = new Scanner(System.in);
 		//String Data = input.nextLine();
@@ -264,7 +264,7 @@ public class Homework1 {
 		String s = "TreeDemoHelp.html";
 		helpURL = getClass().getResource(s);
 		if (helpURL == null) {
-			System.err.println("Couldn't open help file: " + s);
+			System.err.println("");
 		} else if (DEBUG) {
 			System.out.println("Help URL is " + helpURL);
 		}
