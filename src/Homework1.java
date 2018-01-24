@@ -73,7 +73,7 @@ public class Homework1 {
 
 	public static void inorder(Node n)
 	{
-		String output = "";
+		//String output = "";
 
 		if(isOperate(n))
 		{
