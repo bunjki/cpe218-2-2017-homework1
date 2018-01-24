@@ -73,6 +73,7 @@ public class Homework1 {
 
 	public static void inorder(Node n)
 	{
+		String output = "";
 
 		if(isOperate(n))
 		{
@@ -233,7 +234,12 @@ public class Homework1 {
 		DefaultMutableTreeNode node = (DefaultMutableTreeNode)
 				tree.getLastSelectedPathComponent();
 
+		Node n = (Node)node.getUserObject();
+		if(node == null){
+			return;
+		}
 		htmlPane.setText(node.toString());
+		//htmlPane.setText(Homework1.inorder(n) + " = " +  Homework1.calculate(n));
 	}
 
 	private class BookInfo {
